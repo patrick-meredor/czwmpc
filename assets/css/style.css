@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,slnt,wght@0,0..12,100..900;1,0..12,100..900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --primary-font: "Inter", sans-serif;
+    --heading-font: "Outfit", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
