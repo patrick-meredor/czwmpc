@@ -15,7 +15,7 @@ include 'app/partials/navbar.php';
 <main class="container mx-auto p-10">
     <div class="bg-white p-8 rounded-xl shadow-md">
         <h2 class="text-3xl font-bold mb-4">Dashboard</h2>
-        <p class="text-gray-700">Welcome back, <strong><?php echo htmlspecialchars($_SESSION['user_name']); ?></strong>!</p>
+        <p class="text-gray-700">Welcome back, <strong><?php echo $_SESSION['user_name']; ?></strong>!</p>
         
         <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="p-6 bg-blue-50 rounded-lg border border-blue-100">

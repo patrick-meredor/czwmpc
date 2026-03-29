@@ -27,14 +27,14 @@ $pageTitle = "Czwmpc | Welcome";
 
         <div class="flex flex-row items-center justify-center gap-4 pt-4">
             <?php if(!isset($_SESSION['user_id'])): ?>
-                <a href="./auth/register.php" class="bg-green-700 text-white font-semibold rounded-xl p-5">
+                <a href="./auth/register.php" class="bg-green-700 text-white font-semibold rounded-xl" style="padding: 10px;">
                     Join Our Cooperation
                 </a>
-                <a href="./auth/login.php" class="text-gray-700 font-semibold rounded-xl">
+                <a href="./auth/login.php" class="text-gray-700 font-semibold rounded-xl" style="padding: 10px;">
                     Sign In
                 </a>
             <?php else: ?>
-                <a href="./dashboard.php" class="bg-blue-600 text-white font-semibold rounded-xl">
+                <a href="./dashboard.php" class="bg-green-700 text-white font-semibold rounded-xl" style="padding: 5px;">
                     Go to Dashboard
                 </a>
             <?php endif; ?>

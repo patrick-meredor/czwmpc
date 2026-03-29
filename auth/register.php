@@ -11,6 +11,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sss", $name, $email, $password);
     
     if($stmt->execute()) {
+        $success = "Registration is Sucessfull";
         header("Location: login.php?registered=1");
         exit();
     } else {
@@ -43,6 +44,12 @@ $pageTitle = "Czwmpc | Register";
             <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center justify-center text-center">Create Account</h1>
         </div>
         
+        <?php if(isset($success)): ?>
+            <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
+                <?php echo $success; ?>
+            </div>
+        <?php endif; ?>
+
         <?php if(isset($error)): ?>
             <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
                 <?php echo $error; ?>
